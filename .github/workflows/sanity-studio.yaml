@@ -8,8 +8,8 @@ on:
       - '**'
 
 jobs:
-  build:
-    name: 'Build - UI'
+  deploy:
+    name: 'Deploy - Sanity Studio'
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
@@ -22,9 +22,6 @@ jobs:
 
       - name: Install NPM dependencies
         run: npm install
-
-      - name: Build Sanity Studio
-        run: npm run build
 
       - name: Deploy Sanity Studio
         run: npm run deploy
