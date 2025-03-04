@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'outlandish-land-cms/**'
+      - '**'
 
 jobs:
   sanity-deploy:
