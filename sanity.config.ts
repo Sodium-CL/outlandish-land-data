@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Outlandish-Land',
 
-  projectId: 'k97xe8j2',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID,
+  dataset: process.env.SANITY_STUDIO_DATASET,
 
   plugins: [structureTool(), visionTool()],
 
